@@ -1,4 +1,4 @@
-locals {
+/*locals {
   route53_domain = var.route53_domain != "" ? var.route53_domain : var.domain
 }
 
@@ -25,3 +25,4 @@ resource "aws_route53_record" "cert_validation" {
   records = ["${aws_acm_certificate.cert.domain_validation_options.0.resource_record_value}"]
   ttl     = 60
 }
+*/
