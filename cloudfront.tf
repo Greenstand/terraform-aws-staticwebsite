@@ -21,8 +21,6 @@ resource "aws_cloudfront_distribution" "main" {
   enabled             = true
   default_root_object = var.index_document
 
-  aliases = concat([local.bucket_name])
-
   restrictions {
     geo_restriction {
       restriction_type = "none"
