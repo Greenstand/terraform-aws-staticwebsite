@@ -3,7 +3,6 @@ resource "aws_cloudfront_distribution" "main" {
 
   origin {
     origin_id   = "origin-${local.bucket_name}"
-    domain_name = aws_s3_bucket.main.website_endpoint
 
     custom_origin_config {
       origin_protocol_policy = "http-only"
